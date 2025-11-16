@@ -1,0 +1,122 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: rgb(226, 11, 11);
+  padding: 25px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 320px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+
+.input-group {
+  display: flex; 
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+
+.input-with-icon {
+  flex: 1; 
+  position: relative; 
+}
+
+#taskInput {
+  width: 100%; 
+  padding: 10px 40px 10px 10px; 
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 16px;
+  box-sizing: border-box; 
+}
+
+
+.input-edit-icon {
+    position: absolute;
+    right: 10px; 
+    top: 50%;
+    transform: translateY(-50%); 
+    color: #7ece15; 
+    pointer-events: none; 
+}
+
+#addBtn {
+  background:rgb(20, 18, 18);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+#addBtn:hover {
+  background: green;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.2s;
+}
+
+li span {
+  flex-grow: 1; 
+  font-size: 16px;
+}
+
+.actions {
+  display: flex;
+  gap: 8px; 
+}
+
+li button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 5px;
+  transition: color 0.2s;
+}
+
+.edit-btn {
+  color: #2196f3; 
+}
+
+.delete-btn {
+  color: #f44336; 
+}
+
+.edit-btn:hover {
+  color: #0b7dda;
+}
+
+.delete-btn:hover {
+  color: #d32f2f;
+}
